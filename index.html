@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo Cresce Mais - Guia e Receitas Capilares</title>
+    <style>
+        :root {
+            --bg-color: #FDFBF7;
+            --card-bg: #FFFFFF;
+            --primary: #9C525D;
+            --primary-light: #F4E8E9;
+            --accent: #D4AF37;
+            --text-main: #2C2224;
+            --text-muted: #7E7072;
+            --border: #E8D7D9;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; padding: 15px; }
+        .app-container { max-width: 600px; margin: 0 auto; background: var(--card-bg); border-radius: 16px; box-shadow: 0 4px 20px rgba(156, 82, 93, 0.08); overflow: hidden; border: 1px solid var(--border); }
+        .app-header { background: linear-gradient(135deg, var(--primary), #7A3E48); color: white; text-align: center; padding: 30px 20px; }
+        .app-header h1 { font-size: 24px; margin-bottom: 5px; }
+        .app-header p { font-size: 14px; opacity: 0.9; }
+        .nav-tabs { display: flex; background: var(--primary-light); border-bottom: 1px solid var(--border); overflow-x: auto; }
+        .tab-btn { flex: 1; padding: 12px 8px; text-align: center; background: none; border: none; font-weight: 600; color: var(--text-muted); cursor: pointer; font-size: 12px; white-space: nowrap; transition: all 0.3s; }
+        .tab-btn.active { color: var(--primary); border-bottom: 3px solid var(--primary); background: white; }
+        .app-content { padding: 25px 20px; min-height: 350px; }
+        .tab-pane { display: none; }
+        .tab-pane.active { display: block; }
+        h2 { font-size: 18px; color: var(--primary); margin-bottom: 12px; border-left: 4px solid var(--accent); padding-left: 8px; }
+        p, li { font-size: 14px; margin-bottom: 12px; color: var(--text-main); }
+        ul { padding-left: 20px; }
+        .card-box { background: #FAF5F5; border: 1px solid var(--border); padding: 15px; border-radius: 10px; margin-bottom: 15px; }
+        .card-box h3 { font-size: 15px; color: var(--primary); margin-bottom: 6px; }
+        .support-box { margin-top: 25px; background: var(--primary-light); padding: 15px; border-radius: 10px; text-align: center; }
+        .btn-whats { display: inline-block; background-color: #25D366; color: white; text-decoration: none; padding: 10px 20px; border-radius: 20px; font-weight: bold; font-size: 14px; margin-top: 8px; }
+        .app-footer { text-align: center; padding: 15px; font-size: 11px; color: var(--text-muted); border-top: 1px solid var(--border); }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <div class="app-header">
+            <h1>Protocolo Cresce Mais</h1>
+            <p>O teu Aplicativo de Receitas e Cuidados Diários</p>
+        </div>
+        <div class="nav-tabs">
+            <button class="tab-btn active" onclick="openTab(event, 'tab1')">🌿 Início</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab2')">🥑 Receitas</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab3')">📅 Rotina</button>
+            <button class="tab-btn" onclick="openTab(event, 'tab4')">💡 Segredos</button>
+        </div>
+        <div class="app-content">
+            <!-- ABA 1: INÍCIO -->
+            <div id="tab1" class="tab-pane active">
+                <h2>Bem-vinda ao Método!</h2>
+                <p>Este aplicativo interativo foi criado para te guiar passo a passo na jornada de recuperação, fortalecimento e crescimento saudável do teu cabelo.</p>
+                <div class="card-box">
+                    <h3>🎯 O teu objetivo aqui:</h3>
+                    <p>Aprender a tratar o cabelo em casa com inteligência, usando ingredientes naturais e técnicas corretas que evitam a quebra e aceleram o comprimento.</p>
+                </div>
+                <div class="support-box">
+                    <p style="margin-bottom: 5px;">Precisas de ajuda ou avaliação personalizada?</p>
+                    <a href="https://wa.me/244963710583?text=Olá,%20sou%20cliente%20e%20quero%20tirar%20dúvidas%20sobre%20o%20Protocolo!" class="btn-whats" target="_blank">Falar com o Suporte VIP</a>
+                </div>
+            </div>
+
+            <!-- ABA 2: RECEITAS -->
+            <div id="tab2" class="tab-pane">
+                <h2>Receitas Caseiras Poderosas</h2>
+                <p>Misturas caseiras testadas para nutrir e hidratar profundamente:</p>
+                
+                <div class="card-box">
+                    <h3>1. Hidratação de Babosa (Aloe Vera)</h3>
+                    <p><strong>Para que serve:</strong> Brilho extremo e combate à desidratação.</p>
+                    <p><strong>Como fazer:</strong> Retira a baba da folha de babosa, mistura com 2 colheres da tua máscara de hidratação favorita e aplica nos cabelos lavados. Deixa atuar por 20 minutos.</p>
+                </div>
+
+                <div class="card-box">
+                    <h3>2. Nutrição Poderosa com Óleo de Rícino</h3>
+                    <p><strong>Para que serve:</strong> Fortalece a raiz e estimula o crescimento saudável.</p>
+                    <p><strong>Como fazer:</strong> Aplica algumas gotas diretamente no couro cabeludo e faz uma massagem circular durante 5 minutos antes de lavar.</p>
+                </div>
+            </div>
+
+            <!-- ABA 3: ROTINA DIÁRIA -->
+            <div id="tab3" class="tab-pane">
+                <h2>Hábitos e Formas Diárias</h2>
+                <p>Pequenas mudanças no dia a dia que transformam a saúde do cabelo:</p>
+                <ul>
+                    <li><strong>Fronha de Cetim:</strong> Dorme com touca ou fronha de cetim para evitar o atrito, o frizz e a quebra dos fios à noite.</li>
+                    <li><strong>Hidratação Constante:</strong> Bebe bastante água; o cabelo forte começa de dentro para fora.</li>
+                    <li><strong>Desembaraçar Inteligente:</strong> Nunca pentee o cabelo seco com força. Começa sempre das pontas e vai subindo devagar.</li>
+                    <li><strong>Controlo do Calor:</strong> Evita usar água excessivamente quente no banho, pois retira a hidratação natural do couro cabeludo.</li>
+                </ul>
+            </div>
+
+            <!-- ABA 4: SEGREDOS E APRENDIZAGEM -->
+            <div id="tab4" class="tab-pane">
+                <h2>Aprende a Ler o teu Cabelo</h2>
+                <p>Conhecer o teu fio é o segredo para nunca mais errares nos produtos:</p>
+                <div class="card-box">
+                    <h3>💧 Teste de Porosidade Rápido</h3>
+                    <p>Coloca um fio de cabelo limpo num copo com água. Se afundar rápido, o cabelo precisa de Reconstrução. Se boiar, precisa de Hidratação. Se ficar no meio, está equilibrado!</p>
+                </div>
+                <div class="card-box">
+                    <h3>✂️ Cronograma de Sucesso</h3>
+                    <p>Mantém uma rotina constante: lava o cabelo 2 vezes por semana alternando entre Hidratação, Nutrição e Reconstrução conforme a necessidade dos teus fios.</p>
+                </div>
+            </div>
+        </div>
+        <div class="app-footer">&copy; 2026 Protocolo Cresce Mais. Todos os direitos reservados.</div>
+    </div>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabContent, tabBtns;
+            tabContent = document.getElementsByClassName("tab-pane");
+            for (i = 0; i < tabContent.length; i++) { tabContent[i].style.display = "none"; }
+            tabBtns = document.getElementsByClassName("tab-btn");
+            for (i = 0; i < tabBtns.length; i++) { tabBtns[i].className = tabBtns[i].className.replace(" active", ""); }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+                                                      </html>
